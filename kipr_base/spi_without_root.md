@@ -2,7 +2,7 @@
 
 The libwallaby library uses the SPI interface to communicate to the STM32 microcontroller in the Wombat in order to control the IOs (via. SPI DMA). On the Raspberry Pi, the SPI interface is accessed via sysfs as the file ```/dev/spidev0.0```.
 
-In order to access this file, root privileges are required by default. This problem, because because the KIPR software runs as root. When creating a custom SSH user and a custom build system though, it would be advantageous to be able to access the device without entering the sudo password every time.
+In order to access this file, root privileges are required by default. This is no problem, because the KIPR software runs as root by default. When creating a custom SSH user and a custom build system though, it would be advantageous to be able to access the device without entering the sudo password every time.
 
 ## Sources
 
