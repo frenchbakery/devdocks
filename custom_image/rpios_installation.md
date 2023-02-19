@@ -29,13 +29,6 @@ Once the Image is flashed, don't put it in the Wombat straight away, because the
 In the config.txt file, find the following lines:
 
 ```ini
-# uncomment the following to adjust overscan. Use positive numbers if console
-# goes off screen, and negative if there is too much border
-#overscan_left=16
-#overscan_right=16
-#overscan_top=16
-#overscan_bottom=16
-
 # uncomment to force a console size. By default it will be display's size minus
 # overscan.
 #framebuffer_width=1280
@@ -47,18 +40,15 @@ In the config.txt file, find the following lines:
 # uncomment to force a specific HDMI mode (this will force VGA)
 #hdmi_group=1
 #hdmi_mode=1
+
+# uncomment to force a HDMI mode rather than DVI. This can make audio work in
+# DMT (computer monitor) modes
+#hdmi_drive=2
 ```
 
 Replace this block with the following text. This will configure the screen size and HDMI mode to properly output Video on the integrated display:
 
 ```ini
-# uncomment the following to adjust overscan. Use positive numbers if console
-# goes off screen, and negative if there is too much border
-overscan_left=-2
-overscan_right=2
-overscan_top=-2
-overscan_bottom=2
-
 # uncomment to force a console size. By default it will be display's size minus
 # overscan.
 framebuffer_width=800#1280
@@ -74,6 +64,11 @@ hdmi_group=2
 hdmi_mode=87
 hdmi_cvt=800 480 60 6 0 0 0
 hdmi_ignore_edid=0xa5000080
+
+# uncomment to force a HDMI mode rather than DVI. This can make audio work in
+# DMT (computer monitor) modes
+#hdmi_drive=2
+hdmi_drive=1
 ```
 
 ### Enabling interfaces

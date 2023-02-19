@@ -64,7 +64,7 @@ This takes a few minutes and may occasionally spit out some warnings but that sh
 
 ## Installation
 
-The binary and headers have now been prepared, however they still have to be copied to the correct system locations
+The binary and headers have now been prepared, however they still have to be copied to the correct system locations.
 
 To install the library you simply need to run the install target with root privileges.
 
