@@ -8,9 +8,19 @@ This section will guide you through the process of installing a fresh and modern
  - A Computer with internet access and an SD slot/reader
  - Raspberry Pi Imager installed on the computer
 
+## OS Selection
+
+When creating a custom image, you can select any version of Raspberry Pi OS that suits your needs. However, there are a few limitations and recommendations.
+
+First of all, the official Wombat OS is based on a (very old) 32-Bit version of Raspberry Pi OS. In order to get all of the legacy KIPR Software to work without too much hacking around, you will have to use a 32-Bit version as well. It is to be noted that there are discussions about updating to a newer version in KIPR internally, however it looks like that is not going to happen any time soon. Still, some versions of the software (like the [refactored libkipr](install_libkipr_rpios.md) that unfortunately isn't default jet) do work on 64-Bit RPiOS. Whenever that is the case, it is noted in our guide pages.
+
+When it comes to Full vs. Desktop vs. Lite, we recommend going with the Lite version of Raspberry Pi OS as it drastically reduces the amount of bloat that is present on the system by default and you will probably never need. Any additional software (like a window manager and display server) can be selectively installed later in case you need them.
+
+This installation guide applies both to 32-Bit and 64-Bit versions of Raspberry Pi OS Lite, so it should be trivial to select what you need.
+
 ## Installing the OS
 
-First of all, use the Raspberry Pi Imager to install the desired image onto your SD card. For this guide, we will be using the 64-bit version of Raspberry Pi OS Lite. Before flashing the image, go to the settings and configure the default user, e.g. "access" with PWD "access".
+First of all, use the Raspberry Pi Imager to install the desired image onto your SD card.  Before flashing the image, go to the settings and configure the default user, e.g. "access" with PWD "access".
 
 Once the Image is flashed, don't put it in the Wombat straight away, because the screen doesn't work out of the box. To configure the screen, open the config.txt file on the boot partition. While doing so, we can also configure some other peripherals.
 

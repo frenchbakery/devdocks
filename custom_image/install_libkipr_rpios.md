@@ -1,10 +1,10 @@
 # Installing libkipr on RPiOS
 
-This section will guide you through installing libkipr (the new version of libwallaby) on a generic Raspberry Pi OS (Lite) installation.
+This section will guide you through installing libkipr (the new version of libwallaby) on a generic Raspberry Pi OS (Lite) installation. This for sure works on 64-Bit versions of RPiOS, we haven't tested 32-Bit jet.
 
 ## Requirements
 
- - A Wombat with a modern version of Raspberry Pi OS installed on the SD card (ideally [configured to work with the Wombat screen](rpios_installation.md))
+ - A Wombat with a modern version of Raspberry Pi OS (64-Bit) installed on the SD card (ideally [configured to work with the Wombat screen](rpios_installation.md))
  - Network and Internet access on the Wombat (e.g. using ethernet on the local network)
 
 ## Compiling 
