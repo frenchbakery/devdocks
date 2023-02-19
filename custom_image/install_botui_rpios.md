@@ -138,14 +138,23 @@ To get started, install all the dependencies:
 sudo apt install matchbox xorg x11-xserver-utils xinit ttf-mscorefonts-installer xwit
 ```
 
-Then add the following content to the ```/etc/X11/xinit/xinitrc``` file:
+Then open the ```/etc/X11/xinit/xinitrc``` file, comment out any existing, uncommented lines and add the following content at the end:
 
 ```bash
-#!/bin/sh
-
 # custom setup for single view application
-matchbox-window-manager #-use_titlebar no & # start matchbox window manager
-# botui
-
+matchbox-window-manager & #-use_titlebar no & # start matchbox window manager
+# start botui
+botui
 ```
+
+This will start BotUI whenever X is started (like with the ```startx``` command).
+
+We can also add that to our ```.profile``` to automatically start on the console on login:
+
+```bash
+# start the UI
+startx &
+```
+
+To start this automatically on boot, we have to enable auto login using ```sudo raspi-config``` (System Options->Bott/AutoLogin->ConsoleAutoLogin).
 
