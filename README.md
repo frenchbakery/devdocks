@@ -8,6 +8,7 @@ Please note that we are in no way associated with KIPR or any associated organiz
 
  - KIPR Base Image Setup
    - [SSH user setup](kipr_base/ssh_user_setup.md)
+   - [Access SPI without root](kipr_base/spi_without_root.md)
  - Custom Image Setup
    - [RPiOS installation](custom_image/rpios_installation.md)
    - [Installing libwallaby on RPiOS](custom_image/install_libwallaby_rpios.md)
