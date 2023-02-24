@@ -1,4 +1,4 @@
-# Installing BotUI on PRiOS
+# Installing BotUI on RPiOS
 
 This section will guide you through installing BotUI on a generic Raspberry Pi OS (Lite) installation.
 
