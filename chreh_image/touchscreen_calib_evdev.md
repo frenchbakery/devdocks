@@ -20,7 +20,7 @@ sudo apt install xserver-xorg-input-evdev
 To be able to calibrate, we need xinput_calibrator:
 
 ```bash
-sudo apt install xinput_calibrator
+sudo apt install xinput-calibrator
 ```
 
 ## Select driver
