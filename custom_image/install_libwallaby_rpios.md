@@ -23,7 +23,7 @@ This library version is in the master branch ([commit 6cefbf2687b745b627588f5b71
 
 ## Dependencies
 
-Unfortunately, this version of the source tree is intended for Raspbian Jessie and some things have changed since than. Therefore some dirty hacks have to be performed to be able to compile.
+Unfortunately, this version of the source tree is intended for Raspbian Jessie and some things have changed since then. Therefore some dirty hacks have to be performed to be able to compile.
 
 First of all, make sure that the camera interface of the Raspberry Pi is enabled using ```sudo raspi-config```. We also need SPI (and possibly I2C) but those should already have been enabled during the [OS installation](rpios_installation.md). This step may require a reboot.
 
