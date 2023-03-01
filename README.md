@@ -14,3 +14,4 @@ Please note that we are in no way associated with KIPR or any associated organiz
    - [Installing libwallaby on RPiOS](custom_image/install_libwallaby_rpios.md)
    - [Installing libkipr on RPiOS](custom_image/install_libkipr_rpios.md)
    - [Installing BotUI on RPiOS](custom_image/install_botui_rpios.md)
+ - [Coding guidelines](coding_guidelines.md)
